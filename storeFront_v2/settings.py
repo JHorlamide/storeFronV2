@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'playground',
     'store',
     'tags',
-    'likes'
 ]
 
 MIDDLEWARE = [
@@ -87,8 +86,11 @@ WSGI_APPLICATION = 'storeFront_v2.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'storeFrontV2',
+        'HOST': 'localhost',
+        'USER': 'root',
+        'PASSWORD': 'root'
     }
 }
 
